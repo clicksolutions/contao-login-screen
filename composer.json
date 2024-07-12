@@ -1,0 +1,41 @@
+{
+    "name": "clicksolutions/contao-login-screen",
+    "type": "contao-bundle",
+    "description": "Provide functions for Contao 4.13+",
+    "license": "Commercial",
+    "authors": [
+        {
+            "name": "René Fehrmann",
+            "homepage": "https://www.click-solutions.de"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "contao/core-bundle": "^5.3"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest",
+        "contao/manager-plugin": "^2.0",
+        "doctrine/doctrine-cache-bundle": "^1.3"
+    },
+    "conflict": {
+        "contao/core": "*",
+        "contao/manager-plugin": "<2.0 || >=3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ClickSolutions\\ContaoLoginScreenBundle\\": "src/"
+        },
+        "classmap": [
+            "contao/"
+        ],
+        "exclude-from-classmap": [
+            "contao/config/",
+            "contao/dca/",
+            "contao/languages/"
+        ]
+    },
+    "extra": {
+        "contao-manager-plugin": "ClickSolutions\\ContaoLoginScreenBundle\\ContaoManager\\Plugin"
+    }
+}
