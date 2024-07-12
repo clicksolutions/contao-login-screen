@@ -2,7 +2,7 @@
     "name": "clicksolutions/contao-login-screen",
     "type": "contao-bundle",
     "description": "Provide functions for Contao 4.13+",
-    "license": "Commercial",
+    "license": "GPL-3.0-or-later",
     "authors": [
         {
             "name": "René Fehrmann",

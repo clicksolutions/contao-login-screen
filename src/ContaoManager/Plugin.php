@@ -5,7 +5,6 @@
  *
  * @copyright click solutions GmbH 2023 <https://www.click-solutions.de>
  * @author    René Fehrmann <rf@click-solutions.de>
- * @license   Commercial
  */
 
 declare(strict_types=1);
