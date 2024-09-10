@@ -40,6 +40,11 @@ class ParseTemplateListener
             $template->htmlLogo = $this->generateLogoHtml($rootPage);
             $template->htmlBackgroundImage = $this->generateBackgroundImageHtml($rootPage);
 
+            // Add blur if selected
+            if ($rootPage->cs_cls_bg_image_blur) {
+                $template->blurClass = ' cs_cls_bg_image_blur';
+            }
+
             // Handle text
             if ($text = $rootPage->cs_cls_text) {
                 $template->loginInfo = sprintf('<div class="cs_cls_text">%s</div>', $text);

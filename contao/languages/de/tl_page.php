@@ -19,6 +19,7 @@ $translations = [
     // fields
     'cs_cls_logo' => ['Logo', 'Bitte wählen Sie ein Logo aus.'],
     'cs_cls_bg_image' => ['Hintergrundbild', 'Bitte wählen Sie ein Hintergrundbild aus. Für eine zufällige Ausgabe wählen Sie bitte mehrere Hintergrundbilder aus.'],
+    'cs_cls_bg_image_blur' => ['Hintergrundbild weichzeichnen', 'Wählen Sie diese Option, wenn das Hintergrundbild weichgezeichnet werden soll.'],
     'cs_cls_text' => ['Text', 'Bitte geben Sie einen Text ein, der dann auf der Anmeldeseite angezeigt wird.'],
 ];
 

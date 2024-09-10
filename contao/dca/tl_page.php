@@ -12,8 +12,8 @@ declare(strict_types=1);
 /**
  * Palettes
  */
-$GLOBALS['TL_DCA']['tl_page']['palettes']['root'] .= ';{cs_cls_login_legend},cs_cls_logo,cs_cls_bg_image,cs_cls_text';
-$GLOBALS['TL_DCA']['tl_page']['palettes']['rootfallback'] .= ';{cs_cls_login_legend},cs_cls_logo,cs_cls_bg_image,cs_cls_text';
+$GLOBALS['TL_DCA']['tl_page']['palettes']['root'] .= ';{cs_cls_login_legend},cs_cls_logo,cs_cls_bg_image,cs_cls_bg_image_blur,cs_cls_text';
+$GLOBALS['TL_DCA']['tl_page']['palettes']['rootfallback'] .= ';{cs_cls_login_legend},cs_cls_logo,cs_cls_bg_image,cs_cls_bg_image_blur,cs_cls_text';
 
 /**
  * Fields
@@ -29,6 +29,12 @@ $GLOBALS['TL_DCA']['tl_page']['fields']['cs_cls_bg_image'] = [
     'inputType' => 'fileTree',
     'eval' => ['multiple' => true, 'files' => true, 'filesOnly' => true, 'extensions' => 'jpg,jpeg,png,webp,avif', 'fieldType' => 'checkbox', 'isGallery' => true],
     'sql' => "blob NULL"
+];
+$GLOBALS['TL_DCA']['tl_page']['fields']['cs_cls_bg_image_blur'] = [
+    'exclude' => true,
+    'inputType' => 'checkbox',
+    'eval' => ['tl_classes' => 'clr w50'],
+    'sql' => "char(1) NOT NULL default ''"
 ];
 $GLOBALS['TL_DCA']['tl_page']['fields']['cs_cls_text'] = [
     'exclude' => true,

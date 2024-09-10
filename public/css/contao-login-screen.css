@@ -53,6 +53,13 @@
   object-fit: cover;
 }
 
+.cs_cls_login .cs_cls_bg_image_blur img {
+  margin: -30px;
+  width: calc(100% + 60px);
+  height: calc(100% + 60px);
+  filter: blur(20px);
+}
+
 /***** backend login - logo *****/
 
 .cs_cls_logo {

@@ -27,7 +27,7 @@
 <body class="be_login"<?= $this->attributes ?>>
 
 <?php $this->block('container'); ?>
-<?php if ($this->htmlBackgroundImage): ?><div class="cs_cls_bg_image"><?= $this->htmlBackgroundImage; ?></div><?php endif; ?>
+<?php if ($this->htmlBackgroundImage): ?><div class="cs_cls_bg_image<?php if ($this->blurClass): ?> <?= $this->blurClass; ?><?php endif; ?>"><?= $this->htmlBackgroundImage; ?></div><?php endif; ?>
 <div id="container">
   <main id="main">
     <form class="tl_login_form" method="post">
