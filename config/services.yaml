@@ -1,7 +1,11 @@
 services:
-  ClickSolutions\ContaoLoginScreenBundle\EventListener\Hooks\ParseTemplateListener:
+  ClickSolutions\ContaoLoginScreenBundle\EventListener\Hooks\OutputBackendTemplateListener:
     arguments:
       - '%kernel.project_dir%'
+      - '@contao.framework'
+      - '@request_stack'
       - '@contao.image.studio'
+      - '@assets.packages'
+      - '@logger'
     tags:
-      - { name: contao.hook, hook: parseTemplate }
+      - { name: contao.hook, hook: outputBackendTemplate }

@@ -39,6 +39,6 @@ $GLOBALS['TL_DCA']['tl_page']['fields']['cs_cls_bg_image_blur'] = [
 $GLOBALS['TL_DCA']['tl_page']['fields']['cs_cls_text'] = [
     'exclude' => true,
     'inputType' => 'text',
-    'eval' => ['rte' => 'ace', 'maxlength' => 255, 'tl_classes' => 'long'],
+    'eval' => ['maxlength' => 255, 'tl_classes' => 'long'],
     'sql' => "varchar(255) NOT NULL default ''"
 ];

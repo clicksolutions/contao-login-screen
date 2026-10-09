@@ -1,0 +1,13 @@
+cs_cls_login_legend: 'Login settings'
+cs_cls_logo:
+  - 'Logo'
+  - 'Please select a logo.'
+cs_cls_bg_image:
+  - 'Background image'
+  - 'Please select a background image. Select several background images for a random output.'
+cs_cls_bg_image_blur:
+  - 'Blur background image'
+  - 'Select this option if the background image should be blurred.'
+cs_cls_text:
+  - 'Text'
+  - 'Please enter plain text (without HTML) that will be displayed on the login page.'
